@@ -1,0 +1,62 @@
+CREATE TABLE T5 (
+    ID int,
+    Okrug varchar(255),
+    Region varchar(255),
+    Capital varchar(255)
+);
+
+
+INSERT INTO `T5`(`ID`, `Okrug`, `Region`, `Capital`) VALUES (1,'Север','Новосибирский','Новосибирск');
+INSERT INTO `T5`(`ID`, `Okrug`, `Region`, `Capital`) VALUES (2,'Север','Красноярский','Красноярск');
+INSERT INTO `T5`(`ID`, `Okrug`, `Region`, `Capital`) VALUES (3,'Север','Иркутский','Иркутск');
+INSERT INTO `T5`(`ID`, `Okrug`, `Region`, `Capital`) VALUES (4,'Юг','Краснодарский','Краснодар');
+INSERT INTO `T5`(`ID`, `Okrug`, `Region`, `Capital`) VALUES (5,'Юг','Волгоградский','Волгоград');
+INSERT INTO `T5`(`ID`, `Okrug`, `Region`, `Capital`) VALUES (6,'Юг','Астраханский','Астрахань');
+INSERT INTO `T5`(`ID`, `Okrug`, `Region`, `Capital`) VALUES (7,'Запад','Московский','Москва');
+INSERT INTO `T5`(`ID`, `Okrug`, `Region`, `Capital`) VALUES (8,'Запад','Псковский','Псков');
+INSERT INTO `T5`(`ID`, `Okrug`, `Region`, `Capital`) VALUES (9,'Запад','Ивановский','Иваново');
+INSERT INTO `T5`(`ID`, `Okrug`, `Region`, `Capital`) VALUES (10,'Восток','Владивостокский','Владивосток');
+INSERT INTO `T5`(`ID`, `Okrug`, `Region`, `Capital`) VALUES (11,'Восток','Мурманский','Мурманск');
+INSERT INTO `T5`(`ID`, `Okrug`, `Region`, `Capital`) VALUES (12,'Восток','Хабаровский','Хабаровск');
+
+
+
+1
+SELECT Region FROM persons WHERE NOT (Region>'A%' AND Region<'B%');
+
+2
+SELECT Okrug,Region,MIN(Capital) as Capital FROM t5 WHERE Okrug NOT IN ('Север') GROUP BY Okrug
+
+3
+SELECT Capital FROM persons WHERE NOT (Okrug = 'Север');
+
+
+
+
+
+
+CREATE TABLE T2 (
+    ID int,
+    Name varchar(255),
+    Type varchar(255),
+    Company varchar(255)
+);
+
+
+INSERT INTO `T2`(`ID`, `Name`, `Type`, `Company`) VALUES (1,'Win95','Win','Microsoft');
+INSERT INTO `T2`(`ID`, `Name`, `Type`, `Company`) VALUES (2,'Win98','Win','Microsoft');
+INSERT INTO `T2`(`ID`, `Name`, `Type`, `Company`) VALUES (3,'WinNT','Win','UnixF');
+INSERT INTO `T2`(`ID`, `Name`, `Type`, `Company`) VALUES (4,'WinXP','Win','Apple');
+INSERT INTO `T2`(`ID`, `Name`, `Type`, `Company`) VALUES (5,'Unix','Unix','UnixF');
+INSERT INTO `T2`(`ID`, `Name`, `Type`, `Company`) VALUES (6,'FreeBSD','Unix','Jobbs');
+INSERT INTO `T2`(`ID`, `Name`, `Type`, `Company`) VALUES (7,'Linux','Unix','UnixF');
+INSERT INTO `T2`(`ID`, `Name`, `Type`, `Company`) VALUES (8,'MacOS1','Mac','Apple');
+INSERT INTO `T2`(`ID`, `Name`, `Type`, `Company`) VALUES (9,'MacOS2','Mac','Apple');
+INSERT INTO `T2`(`ID`, `Name`, `Type`, `Company`) VALUES (10,'MacOS3','Mac','Jobbs');
+
+
+
+
+
+
+
