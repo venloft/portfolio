@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+
+{%block title%}Сумма чисел{% endblock %}
+{%block content%}
+<br><br><br>
+
+<h2>Подсчитать сумму всех чисел до N:</h2><br>
+<form method="POST" >
+    {% csrf_token %}
+<label >от </label><input type="text" onkeypress='validate(event)'  size="1" value="{{r1}}" name="1">
+<label >до </label> <input type="text" onkeypress='validate(event)' size="1" value="{{r2}}" name="2" >
+    <button type="sumbit" name="result1" >Посчитать</button><br><br>
+    <label>Результат:{{r}}</label>
+</form>
+{% endblock %}

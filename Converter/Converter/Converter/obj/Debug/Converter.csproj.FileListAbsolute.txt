@@ -1,0 +1,44 @@
+C:\Users\Lolimpo\Google Drive\SibSUTIS\Labs\4 course\MPT-2\Converter\Converter\bin\Debug\Converter.exe.config
+C:\Users\Lolimpo\Google Drive\SibSUTIS\Labs\4 course\MPT-2\Converter\Converter\bin\Debug\Converter.exe
+C:\Users\Lolimpo\Google Drive\SibSUTIS\Labs\4 course\MPT-2\Converter\Converter\bin\Debug\Converter.pdb
+C:\Users\Lolimpo\Google Drive\SibSUTIS\Labs\4 course\MPT-2\Converter\Converter\obj\Debug\Converter.csprojAssemblyReference.cache
+C:\Users\Lolimpo\Google Drive\SibSUTIS\Labs\4 course\MPT-2\Converter\Converter\obj\Debug\Converter.Form1.resources
+C:\Users\Lolimpo\Google Drive\SibSUTIS\Labs\4 course\MPT-2\Converter\Converter\obj\Debug\Converter.Properties.Resources.resources
+C:\Users\Lolimpo\Google Drive\SibSUTIS\Labs\4 course\MPT-2\Converter\Converter\obj\Debug\Converter.csproj.GenerateResource.cache
+C:\Users\Lolimpo\Google Drive\SibSUTIS\Labs\4 course\MPT-2\Converter\Converter\obj\Debug\Converter.csproj.CoreCompileInputs.cache
+C:\Users\Lolimpo\Google Drive\SibSUTIS\Labs\4 course\MPT-2\Converter\Converter\obj\Debug\Converter.exe
+C:\Users\Lolimpo\Google Drive\SibSUTIS\Labs\4 course\MPT-2\Converter\Converter\obj\Debug\Converter.pdb
+C:\Users\Lolimpo\Google Drive\SibSUTIS\Labs\4 course\MPT-2\Converter\Converter\obj\Debug\Converter.Form2.resources
+D:\Рабочий стол\Converter\Converter\bin\Debug\Converter.exe.config
+D:\Рабочий стол\Converter\Converter\bin\Debug\Converter.exe
+D:\Рабочий стол\Converter\Converter\bin\Debug\Converter.pdb
+D:\Рабочий стол\Converter\Converter\obj\Debug\Converter.csprojAssemblyReference.cache
+D:\Рабочий стол\Converter\Converter\obj\Debug\Converter.Form1.resources
+D:\Рабочий стол\Converter\Converter\obj\Debug\Converter.Form2.resources
+D:\Рабочий стол\Converter\Converter\obj\Debug\Converter.Properties.Resources.resources
+D:\Рабочий стол\Converter\Converter\obj\Debug\Converter.csproj.GenerateResource.cache
+D:\Рабочий стол\Converter\Converter\obj\Debug\Converter.csproj.CoreCompileInputs.cache
+D:\Рабочий стол\Converter\Converter\obj\Debug\Converter.exe
+D:\Рабочий стол\Converter\Converter\obj\Debug\Converter.pdb
+C:\Users\user\Downloads\Converter\Converter\Converter\bin\Debug\Converter.exe.config
+C:\Users\user\Downloads\Converter\Converter\Converter\bin\Debug\Converter.exe
+C:\Users\user\Downloads\Converter\Converter\Converter\bin\Debug\Converter.pdb
+C:\Users\user\Downloads\Converter\Converter\Converter\obj\Debug\Converter.csprojAssemblyReference.cache
+C:\Users\user\Downloads\Converter\Converter\Converter\obj\Debug\Converter.Form1.resources
+C:\Users\user\Downloads\Converter\Converter\Converter\obj\Debug\Converter.Form2.resources
+C:\Users\user\Downloads\Converter\Converter\Converter\obj\Debug\Converter.Properties.Resources.resources
+C:\Users\user\Downloads\Converter\Converter\Converter\obj\Debug\Converter.csproj.GenerateResource.cache
+C:\Users\user\Downloads\Converter\Converter\Converter\obj\Debug\Converter.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\Converter\Converter\Converter\obj\Debug\Converter.exe
+C:\Users\user\Downloads\Converter\Converter\Converter\obj\Debug\Converter.pdb
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Converter\Converter\Converter\bin\Debug\Converter.exe.config
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Converter\Converter\Converter\bin\Debug\Converter.exe
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Converter\Converter\Converter\bin\Debug\Converter.pdb
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Converter\Converter\Converter\obj\Debug\Converter.csprojAssemblyReference.cache
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Converter\Converter\Converter\obj\Debug\Converter.Form1.resources
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Converter\Converter\Converter\obj\Debug\Converter.Form2.resources
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Converter\Converter\Converter\obj\Debug\Converter.Properties.Resources.resources
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Converter\Converter\Converter\obj\Debug\Converter.csproj.GenerateResource.cache
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Converter\Converter\Converter\obj\Debug\Converter.csproj.CoreCompileInputs.cache
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Converter\Converter\Converter\obj\Debug\Converter.exe
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Converter\Converter\Converter\obj\Debug\Converter.pdb

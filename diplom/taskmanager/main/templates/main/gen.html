@@ -1,0 +1,29 @@
+{% extends 'main/base.html' %}
+
+{%block title%}Генератор неповторяющихся чисел{% endblock %}
+{%block content%}
+
+
+<h1>Генератор неповторяющихся чисел:</h1><br>
+<label >Введите диапазон для генерации; <br> Количество чисел не должно превышать 10^5: <br> </label>
+<br><form method="POST" >
+    {% csrf_token %}
+<label >от </label><input type="text" onkeypress='validate(event)'  size="1" value="{{min}}" name="1">
+<label >до </label> <input type="text" onkeypress='validate(event)' size="1" value="{{max}}" name="2" ><br><br>
+<div style="text-align: center;">
+<table style="display: inline-block;">
+    <tr>
+        <td>
+
+    <button type="sumbit" name="result1" value="Создать список чисел">Создать список чисел</button>
+
+</td>
+        <td width="45%">
+     <button name="result2"  type="sumbit" value="Выводить числа по одному">Выводить числа по одному</button>
+
+        </td>
+</tr>
+</table>
+   <br><br> <label>{{st}}</label> <br>
+</div></form>
+{% endblock %}

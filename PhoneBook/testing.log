@@ -1,0 +1,11 @@
+********* Start testing of test *********
+Config: Using QtTest library 5.3.1, Qt 5.3.1
+PASS   : test::initTestCase()
+PASS   : test::add()
+PASS   : test::del()
+PASS   : test::clear()
+PASS   : test::isUniqueName()
+PASS   : test::find()
+PASS   : test::cleanupTestCase()
+Totals: 7 passed, 0 failed, 0 skipped
+********* Finished testing of test *********

@@ -1,0 +1,61 @@
+{% extends 'main/base.html' %}
+
+{%block title%}Подсчет по формулам комбинаторики{% endblock %}
+{%block content%}
+<style>
+    .texts {
+  color: #75002d;
+}
+
+</style>
+
+
+<script>
+    function text1(){
+    for(let i=1; i<=8; i++)
+        document.getElementsByTagName("lable")['n'+i.toString()].textContent = document.getElementById("n").value;
+
+    }
+    function text2(){
+    for(let i=1; i<=6; i++)
+        document.getElementsByTagName("lable")['m'+i.toString()].textContent = document.getElementById("m").value;
+
+    }
+    function init() {
+    num = Number(document.getElementById("id").value);
+    for( let i=1; i<=5; i++){
+    if(num == i)
+    document.getElementById("v"+i.toString()).style.color='green';
+    else
+    document.getElementById("v"+i.toString()).style.color='';
+    }
+    }
+
+</script>
+<br><br><br>
+
+<h2>Посчитать по формулам комбинаторики:</h2><br>
+<form method="POST" >
+    {% csrf_token %}
+<label >Номер формулы: </label><input value="1" onkeypress='validate(event)' onkeyup="init()" onblur="init()" id="id" type="text" size="1" name="numb">
+    <br><br>
+    <button type="sumbit" name="result1" >Вычислить</button><br><br>
+    <label>n - кол-во обьектов, m - кол-во обьектов взятых из n</label><br><br>
+    <label>Вычисления получаются если: n > m</label>
+     <div style="text-align: center;">
+    <table cellspacing="10" style="display: inline-block;">
+        <tr><td colspan="2"><label >n = </label><input type="text" onkeypress='validate(event)' onkeyup="text1()" onblur="text1()" id="n" size="1" value="{{n}}" name="n">  <label > m = </label><input onkeypress='validate(event)' onkeyup="text2()" onblur="text2()" type="text" id="m" onkeypress='validate(event)' value="{{m}}" size="1"  name="m"></td></tr>
+        <tr><td ><label ><b>Размещение: </b></label></td></tr>
+        <tr><td align="left"><label id="v1">1.Повторение </label></td><td align="right"><lable name="n1"></lable> ! / ( <lable name="n2"></lable> - <lable name="m1"></lable>) ! = {{res1}}</td></tr>
+        <tr><td align="left"><label id="v2">2.Без повторения </label></td><td align="right"><lable name="n3"></lable><sup><lable name="m2"></lable></sup> = {{res2}}</td></tr>
+        <tr><td><label ><b>Перестановки:</b> </label></td></tr>
+        <tr><td align="left"><label id="v3">3.Без повторения </label></td><td align="right"><lable name="n4"></lable> ! = {{res3}}</td></tr>
+        <tr><td><label ><b>Сочетания: </b></label></td></tr>
+        <tr><td align="left"><label id="v4">4.Повторение </label></td><td align="right">  <lable name="n5"></lable>! /  <lable name="m3"></lable>! ( <lable name="n6"></lable> - <lable name="m4"></lable> ) ! = {{res4}}</td></tr>
+        <tr><td align="left"><label id="v5">5.Без повторения </label></td><td align="right"> ( <lable name="n7"></lable> + <lable name="m5"></lable> - 1 ) ! / ( <lable name="m6"></lable>! ( <lable name="n8"></lable> - 1 ) ! ) = {{res5}}</td></tr>
+
+
+</table>
+     </div>
+</form>
+{% endblock %}

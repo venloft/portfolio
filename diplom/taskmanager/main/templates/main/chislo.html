@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+
+{%block title%}Характеристики чисел{% endblock %}
+{%block content%}
+
+<form method="POST" >
+    {% csrf_token %}
+<h1>Определитель характеристики натурального числа N</h1><br>
+    <h3>N не больше 10^7</h3><br>
+<input id="numb" type="text" onkeypress='validate(event)' name="chisl" value="{{chisl}}" size="40">
+    <input type="submit" value="Определить"  /> <br> <br>
+         <div style="text-align: center;">
+    <table style="display: inline-block;">
+
+                <tr><td align="left"><label  >Количество разрядов:</label></td><td ><label> {{n0}}</label></td> </tr>
+                <tr><td align="left"><label  >Простое:</label> </td><td ><label> {{n1}}</label></td></tr>
+                <tr><td align="left"><label  >Совершенное:</label> </td><td ><label> {{n2}}</label></td></tr>
+                <tr><td align="left"><label  >Простые множители числа:</label> </td ><td ><label> {{n3}}</label></td></tr>
+                <tr><td align="left"><label  >Чет/нечет:</label> </td><td ><label> {{n4}}</label></td></tr>
+                <tr><td align="left"><label  >Сумма цифр числа:</label> </td><td ><label> {{n5}}</label></td></tr>
+
+    </table>
+    </div>
+</form>
+{% endblock %}

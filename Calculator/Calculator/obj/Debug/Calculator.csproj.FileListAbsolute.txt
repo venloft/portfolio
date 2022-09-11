@@ -1,0 +1,27 @@
+C:\Users\user\stp2\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+C:\Users\user\stp2\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\user\stp2\Calculator\Calculator\obj\Debug\Calculator.ShowRoots.resources
+C:\Users\user\stp2\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\user\stp2\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\user\stp2\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\user\stp2\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\user\stp2\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\user\stp2\Calculator\Calculator\bin\Debug\System.ValueTuple.dll
+C:\Users\user\stp2\Calculator\Calculator\bin\Debug\System.ValueTuple.xml
+C:\Users\user\stp2\Calculator\Calculator\obj\Debug\Calculator.csproj.CopyComplete
+C:\Users\user\stp2\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\user\stp2\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\bin\Debug\System.ValueTuple.dll
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\bin\Debug\System.ValueTuple.xml
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\obj\Debug\Calculator.ShowRoots.resources
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\obj\Debug\Calculator.csproj.CopyComplete
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\Artem\Desktop\8 семестр\STP2-main\Calculator\Calculator\obj\Debug\Calculator.pdb

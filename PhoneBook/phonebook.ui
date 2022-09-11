@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PhoneBook</class>
+ <widget class="QMainWindow" name="PhoneBook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PhoneBook</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QScrollBar:vertical { 
+	background: white; 
+	width: 8px; 
+	border: 1px solid transparent;
+	border-radius: 4px; 
+}
+QScrollBar:handle:vertical { 
+	background: qlineargradient(spread:pad, x1:0.463, y1:1, x2:0.453353, y2:0, stop:0 rgba(103, 102, 103, 255), stop:1 rgba(0, 0, 0, 255));
+
+	min-height: 0; 
+	border-radius: 4px;
+}
+QScrollBar:handle:hover { background: rgb(45, 78, 93); }
+QScrollBar:add-line:vertical { border: none; background: none; }
+QScrollBar:sub-line:vertical { border: none; background: none; }
+QScrollBar:horizontal { 
+	background: white; 
+	height: 8px; 
+	margin-left: 10px; 
+	border: 1px solid transparent;
+	border-radius: 4px; 
+}
+QScrollBar:handle:horizontal { 
+	background: qlineargradient(spread:pad, x1:1, y1:0.494, x2:0, y2:0.494, stop:0 rgba(103, 102, 103, 255), stop:1 rgba(0, 0, 0, 255));
+	min-width: 0; 
+	border-radius: 4px;
+}
+QScrollBar:add-line:horizontal { border: none; background: none; }
+QScrollBar:sub-line:horizontal { border: none; background: none; }</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	background: rgb(242, 242, 242); 
+	border-radius: 10px;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frameTop">
+      <property name="styleSheet">
+       <string notr="true">QFrame#frameTop {
+	background: rgb(103, 102, 103);
+	border-radius: 0;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>608</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnClose">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btnClose {
+	background: transparent;
+	image: url(:/img/close.png);
+	padding: 5px;
+}
+QPushButton#btnClose:hover {
+	image: url(:/img/closeHover.png);
+	padding: 2px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblTitle">
+         <property name="styleSheet">
+          <string notr="true">QLabel#lblTitle {
+	font: 40pt &quot;AR DESTINE&quot;;
+	background: transparent;
+}</string>
+         </property>
+         <property name="text">
+          <string>Телефонная Книга</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>802</width>
+         <height>770</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <property name="leftMargin">
+         <number>20</number>
+        </property>
+        <property name="topMargin">
+         <number>30</number>
+        </property>
+        <property name="rightMargin">
+         <number>20</number>
+        </property>
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLabel" name="lblFullName">
+            <property name="styleSheet">
+             <string notr="true">QLabel#lblFullName {
+	font: 10pt &quot;AR DESTINE&quot;;
+	color: rgb(103, 102, 103);
+	background: transparent;
+}</string>
+            </property>
+            <property name="text">
+             <string>ФИО:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lEditFullname">
+            <property name="minimumSize">
+             <size>
+              <width>301</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>301</width>
+              <height>31</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit#lEditFullname {
+	font: 75 italic 15pt &quot;Garamond&quot;;
+	background: transparent;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 10px;
+	color: rgb(103, 102, 103);
+	border: 1px solid rgb(103, 102, 103);
+	padding-left: 3px;
+	padding-right: 3px;
+	selection-background-color: rgb(103, 102, 103);
+}
+
+QLineEdit#lEditFullname:focus {
+	border: 1px solid rgb(92, 192, 254);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>Ivanov Ivan Ivanovich</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lEditPhoneNumber">
+            <property name="minimumSize">
+             <size>
+              <width>201</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>201</width>
+              <height>31</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit#lEditPhoneNumber {
+	font: 75 italic 15pt &quot;Garamond&quot;;
+	background: transparent;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 20px;
+	color: rgb(103, 102, 103);
+	border: 1px solid rgb(103, 102, 103);
+	padding-left: 3px;
+	padding-right: 3px;
+	selection-background-color: rgb(103, 102, 103);
+}
+
+QLineEdit#lEditPhoneNumber:focus {
+	border: 1px solid rgb(92, 192, 254);
+}</string>
+            </property>
+            <property name="placeholderText">
+             <string>+7123456789</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lblPhoneNumber">
+            <property name="styleSheet">
+             <string notr="true">QLabel#lblPhoneNumber {
+	font: 10pt &quot;AR DESTINE&quot;;
+	color: rgb(103, 102, 103);
+	background: transparent;
+}</string>
+            </property>
+            <property name="text">
+             <string>:Телефон</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>20</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnAdd">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton#btnAdd {
+	font: 15pt &quot;AR DESTINE&quot;;
+	color: rgb(103, 102, 103);
+	background: transparent;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 10px;
+	border: 1px solid rgb(103, 102, 103);
+}
+
+QPushButton#btnAdd:hover {
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
+}</string>
+            </property>
+            <property name="text">
+             <string>Добавить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnFind">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton#btnFind {
+	font: 15pt &quot;AR DESTINE&quot;;
+	color: rgb(103, 102, 103);
+	background: transparent;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 20px;
+	border: 1px solid rgb(103, 102, 103);
+}
+
+QPushButton#btnFind:hover {
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
+}</string>
+            </property>
+            <property name="text">
+             <string>Удалить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblTitleLab1">
+          <property name="styleSheet">
+           <string notr="true">QLabel#lblTitleLab1 {
+	font: 20pt &quot;AR DESTINE&quot;;
+	color: rgb(103, 102, 103);
+	background: transparent;
+	text-decoration: underline;
+}</string>
+          </property>
+          <property name="text">
+           <string>Данные:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QLabel" name="lblHeader">
+            <property name="styleSheet">
+             <string notr="true">QLabel#lblHeader {
+		border-top-left-radius: 20px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 0px;
+	background-color: rgb(103, 102, 103);
+	font: 12pt &quot;AR DESTINE&quot;;
+	color: white;
+	padding: 10px;
+}</string>
+            </property>
+            <property name="text">
+             <string>ФИО                                                                      Телефон</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listWidget">
+            <property name="minimumSize">
+             <size>
+              <width>760</width>
+              <height>400</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>760</width>
+              <height>400</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 75 italic 15pt &quot;Garamond&quot;;
+color: rgb(123, 122, 123);</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblError">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel#lblError {
+	font: 75 italic 15pt &quot;Garamond&quot;;
+	color: red;
+	background: transparent;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="btnOpen">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton#btnOpen {
+	font: 15pt &quot;AR DESTINE&quot;;
+	color: rgb(103, 102, 103);
+	background: transparent;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 20px;
+	border: 1px solid rgb(103, 102, 103);
+}
+
+QPushButton#btnOpen:hover {
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
+}</string>
+            </property>
+            <property name="text">
+             <string>Открыть</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSave">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton#btnSave {
+	font: 15pt &quot;AR DESTINE&quot;;
+	color: rgb(103, 102, 103);
+	background: transparent;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 10px;
+	border: 1px solid rgb(103, 102, 103);
+}
+
+QPushButton#btnSave:hover {
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
+}</string>
+            </property>
+            <property name="text">
+             <string>Сохранить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>258</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnClear">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton#btnClear {
+	font: 15pt &quot;AR DESTINE&quot;;
+	color: rgb(103, 102, 103);
+	background: transparent;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 20px;
+	border: 1px solid rgb(103, 102, 103);
+}
+
+QPushButton#btnClear:hover {
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
+}</string>
+            </property>
+            <property name="text">
+             <string>Очистить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDelete">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton#btnDelete {
+	font: 15pt &quot;AR DESTINE&quot;;
+	color: rgb(103, 102, 103);
+	background: transparent;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 10px;
+	border: 1px solid rgb(103, 102, 103);
+}
+
+QPushButton#btnDelete:hover {
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
+}</string>
+            </property>
+            <property name="text">
+             <string>Удалить</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnEdit">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton#btnEdit {
+	font: 15pt &quot;AR DESTINE&quot;;
+	color: rgb(103, 102, 103);
+	background: transparent;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 10px;
+	border: 1px solid rgb(103, 102, 103);
+}
+
+QPushButton#btnEdit:hover {
+	color: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
+}</string>
+            </property>
+            <property name="text">
+             <string>Изменить</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>PhoneBook</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>772</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
